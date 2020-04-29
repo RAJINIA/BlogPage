@@ -1,0 +1,21 @@
+<div>
+        <label>Title</label>
+        <input required type="text" name="title" value="<%=article.title %>" id="title" class="mb-4"/>
+    </div>
+    <div>
+        <label>Description</label>
+        <textarea name="description" id="description" class="mb-4">
+            <%=article.description %>
+        </textarea>
+    </div>
+    <div>
+        <label>Markdown</label>
+        <textarea name="markdown" id="markdown" class="mb-4">
+            <%=article.markdown %>
+        </textarea>
+    </div>
+    <div class="mt-4">
+        <input type="hidden" name="id" value="<%=article.id %>" />
+        <button type="submit">Save</button>
+        <a href="/">Cancel</a>
+    </div>
